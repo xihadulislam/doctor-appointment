@@ -27,7 +27,7 @@ class DoctorInfoScreen extends StatelessWidget {
                   height: 250,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/image/do.png"),
+                          image: AssetImage("assets/images/do.png"),
                         fit: BoxFit.cover
                       )
                   ),

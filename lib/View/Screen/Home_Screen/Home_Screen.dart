@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: const BorderRadius.all(Radius.circular(10)),
                       child: FadeInImage.assetNetwork(
-                        placeholder: 'assets/image/profile_lode.gif',
+                        placeholder: 'assets/images/profile_lode.gif',
                         image: "https://cdn-icons-png.flaticon.com/512/2922/2922510.png",
                       ),
                     ),
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: const BorderRadius.all(Radius.circular(10)),
                         image:
-                            const DecorationImage(image: AssetImage("assets/image/clinic_back.png"), fit: BoxFit.cover),
+                            const DecorationImage(image: AssetImage("assets/images/clinic_back.png"), fit: BoxFit.cover),
                         boxShadow: [
                           BoxShadow(
                             color: kPrimaryColors.withOpacity(0.3),
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                                 padding: const EdgeInsets.all(10),
                                 decoration: const BoxDecoration(
                                     color: kColorsWhite, borderRadius: BorderRadius.all(Radius.circular(30))),
-                                child: SvgPicture.asset("assets/image/plus.svg"),
+                                child: SvgPicture.asset("assets/images/plus.svg"),
                               )),
                         ],
                       ),
@@ -276,7 +276,7 @@ class HomeScreen extends StatelessWidget {
                                 child: ClipRRect(
                                   borderRadius: const BorderRadius.all(Radius.circular(10)),
                                   child: FadeInImage.assetNetwork(
-                                    placeholder: 'assets/image/profile_lode.gif',
+                                    placeholder: 'assets/images/profile_lode.gif',
                                     image: popularController.popularDoctorList[indexPopular].image,
                                   ),
                                 ),
