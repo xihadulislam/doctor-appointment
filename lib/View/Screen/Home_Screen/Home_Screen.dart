@@ -244,7 +244,7 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, int indexPopular) {
                       return InkWell(
                         onTap: () {
-                          Get.to(const DoctorInfoScreen());
+                          Get.to( DoctorInfoScreen());
                         },
                         child: Container(
                           height: 190,
