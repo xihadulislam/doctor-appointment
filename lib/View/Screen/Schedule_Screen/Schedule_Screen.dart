@@ -148,7 +148,7 @@ class ScheduleScreen extends StatelessWidget {
                                       borderRadius:
                                       const BorderRadius.all(Radius.circular(10)),
                                       child: FadeInImage.assetNetwork(
-                                        placeholder: 'assets/image/profile_lode.gif',
+                                        placeholder: 'assets/images/profile_lode.gif',
                                         image: "https://cdn-icons-png.flaticon.com/512/3304/3304567.png",
                                       ),
                                     ),

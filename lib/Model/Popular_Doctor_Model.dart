@@ -14,7 +14,7 @@ class PopularDoctorModel {
     id = json['id'];
     name = json['name'];
     depName = json['dep_name'];
-    image = json['image'];
+    image = json['images'];
     avgRating = json['avg_rating'];
   }
 
@@ -23,7 +23,7 @@ class PopularDoctorModel {
     data['id'] = id;
     data['name'] = name;
     data['dep_name'] = depName;
-    data['image'] = image;
+    data['images'] = image;
     data['avg_rating'] = avgRating;
     return data;
   }

@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import '../../constant.dart';
 import 'Home_Screen/Home_Screen.dart';
@@ -54,6 +55,7 @@ class MainScreen extends StatelessWidget {
 
    @override
   Widget build(BuildContext context) {
+     FlutterStatusbarcolor.setStatusBarColor(kColorsWhite);
     return Scaffold(
       backgroundColor: kColorsWhite,
       body: SafeArea(
