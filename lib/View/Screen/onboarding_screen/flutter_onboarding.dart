@@ -30,7 +30,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     initialPage: 0,
     keepPage: true,
   );
-
+////////
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
