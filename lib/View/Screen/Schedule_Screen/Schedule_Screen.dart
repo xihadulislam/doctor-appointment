@@ -1,9 +1,10 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, must_be_immutable
 
 
 import 'package:doctor_appointment/Controller/Schedule_Controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:get/get.dart';
 import '../../../constant.dart';
 
@@ -13,7 +14,9 @@ class ScheduleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    FlutterStatusbarcolor.setStatusBarColor(kPrimaryColors);
     return Scaffold(
+      backgroundColor: kWhiteColor,
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -102,7 +105,7 @@ class ScheduleScreen extends StatelessWidget {
                     itemCount: 7,
                     itemBuilder: (context,int idex){
                       return Container(
-                        height: 155,
+                        height: 180,
                         margin: const EdgeInsets.symmetric(vertical: 5),
                         decoration:  BoxDecoration(
                           color: kColorsWhite,
@@ -110,7 +113,7 @@ class ScheduleScreen extends StatelessWidget {
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
+                              color: Colors.grey.withOpacity(0.1),
                               spreadRadius: 1,
                               blurRadius: 10,
                               offset: const Offset(0, 3), // changes position of shadow
@@ -130,10 +133,10 @@ class ScheduleScreen extends StatelessWidget {
                                   children:  [
                                     Container(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Dr.Olivia",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600),)),
+                                        child: Text("Dr.Olivia",style: TextStyle(fontSize: 17,fontWeight: FontWeight.w600),)),
                                     Container(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Cardiologists",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400),)),
+                                        child: Text("Cardiologists",style: TextStyle(fontSize: 13,fontWeight: FontWeight.normal,color: Colors.black54),)),
                                   ],
                                 ),
                                   Container(
@@ -155,12 +158,13 @@ class ScheduleScreen extends StatelessWidget {
                                   ),
                               ],),
                             ),
+                            const SizedBox(height: 10,),
                             Container(
                               margin: EdgeInsets.only(top: 3,left: 20,right: 20),
                               color: kScheduleTextColor,
                               height: 1,
                             ),
-                            const SizedBox(height: 5,),
+                            const SizedBox(height: 12,),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
@@ -218,7 +222,7 @@ class ScheduleScreen extends StatelessWidget {
 
                               ],
                             ),
-                            const SizedBox(height: 7,),
+                            const SizedBox(height: 12,),
 
                             Container(
                               margin: EdgeInsets.only(top: 5,left: 20,right: 20),
@@ -254,7 +258,8 @@ class ScheduleScreen extends StatelessWidget {
 
                                 ],
                               ),
-                            )
+                            ),
+                            const SizedBox(height: 15,),
                           ],
                         ),
                       );
